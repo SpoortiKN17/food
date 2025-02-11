@@ -1,0 +1,91 @@
+
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(226, 77, 77);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10pt;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+/* Video as background */
+section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Make sure video stays behind other elements */
+}
+
+.order-form {
+    position: relative;
+    z-index: 1; /* Ensure the form appears above the video */
+     /* Slightly transparent background for form */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.order-form h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(226, 77, 77);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="button"] {
+    background-color: #aaa;
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px 0;
+}
